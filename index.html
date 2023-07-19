@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCT Next Generation eTicketing System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://aniportalimages.s3.amazonaws.com/media/details/Railway_july31.jpg" alt="irctc logo 1"
+            style="width: 6%; height: 78%;">
+        <div class="div1">
+            <div class="div2">
+                <button style="background-color: rgb(33,61,119); padding: .5% 1%;">
+                    <a href="" style="color:#fff; font-weight: bold">LOGIN</a>
+                </button>
+                <a class="items" href="https://www.irctc.co.in/nget/profile/user-registration">REGISTER</a>
+                <!-- <a class="items" href="" onclick="return false" >
+                    <span>AGENT LOGIN</span> -->
+
+
+
+                <a id="myBtn" class="items" onclick="return false">AGENT LOGIN</a>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top ng-tns-c56-7"
+                            style="background-color: blue;"><span class="ui-dialog-title ng-tns-c56-7 ng-star-inserted"
+                                style="">Confirmation</span>
+                            <!---->
+                            <div class="ui-dialog-titlebar-icons ng-tns-c56-7"><!----></div>
+                        </div>
+
+                        <span class="ui-confirmdialog-message ng-tns-c56-7">
+                            <ol>
+                                <li>That I will not use IRCTC personal User ID to book tickets for my Customer. </li>
+                                <li>That I will not overcharge the customer over and above the IRCTC Prescribed ticket
+                                    fare.</li>
+                                <li> That I will not alter the contents of ERS. </li>
+                                <li>That I will abide by all the IRCTC Rules and Regulations and the Guidelines laid
+                                    down for ticket booking/cancellations/refunds etc, by IRCTC/Ministry of Railways
+                                    from time to time.</li>
+                            </ol>
+                        </span>
+                        <div class="ui-dialog-footer ui-widget-content ng-tns-c56-7 ng-star-inserted" style=""><button
+                                type="button" pbutton=""
+                                class="ng-tns-c56-7 ui-confirmdialog-acceptbutton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ng-star-inserted"><span
+                                    aria-hidden="true" class="ui-button-icon-left ui-clickable pi pi-check"></span>
+                                <span class="ui-button-text ui-clickable">I Agree</span></button><!----><!----></div>
+                    </div>
+
+                </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+                <!-- </a> -->
+                <a class="items" href="">CONTACT US</a>
+                <a class="items" href="https://www.irctc.co.in/nget/enquiry/alerts">ALERTS</a>
+                <a class="items" href="">ASK DISHA</a>
+                <button style="background-color: rgb(214, 215, 218); padding: .5% 1.3%;">
+                    <a href="" style="color:#000; font-weight: bold">ALERTS</a>
+                </button>
+                &emsp;
+                <span id="date">19-July-2023</span>
+                <span id="time" class="spac">
+                    <p id="demo"></p>
+
+                    <script>
+                        const d = new Date().toLocaleTimeString();
+                        document.getElementById("demo").innerHTML = d;
+
+                    </script>
+                </span>
+                &emsp;
+                <div style="margin-right:1%; font-weight:bolder; font-size:85%;">A-</div>
+                <div style="margin-right:1%; font-weight:bolder; font-size:85%;">A</div>
+                <div style="margin-right:1%; font-weight:bolder; font-size:85%;">A+</div>
+                <div style="margin-right:1%; font-weight:bolder; font-size:80%;">Hindi</div>
+            </div>
+            <div class="div3">
+                <i _ngcontent-uam-c48="" style="color:rgb(133, 139, 139);" class="fa fa-home"></i>
+                <button style="background-color: rgb(33,61,119); padding: .7% 1.3%;">
+                    <a href="#" style="color:#fff; font-weight: bold">IRCTC EXCLUSIVE</a>
+                </button>
+                <!-- <ul class="list1" > -->
+                <div class="menu-list header-icon-menu dropdown">
+                    <a aria-label="Menu Holiday" onclick="return false;"> TRAINS </a>
+                    <div class="dropdown-content">
+                        <div class="menu-list header-icon-menu dropdowns">
+                            <a aria-label="Menu Holiday" onclick="return false;"> Book Ticket </a>
+                        </div>
+                        <div class="menu-list header-icon-menu dropdowns">
+                            <a class="check" aria-label="Menu Holiday" onclick="return false;">Foreign Tourist
+                                Booking</a>
+                        </div>
+                        <div class="menu-list header-icon-menu dropdowns">
+                            <a class="check" aria-label="Menu Holiday" onclick="return false;">Connecting Ticket
+                                Booking</a>
+                        </div>
+                        <div class="menu-list header-icon-menu dropdowns">
+                            <a class="check" aria-label="Menu Holiday" onclick="return false;">IRCTC Trains</a>
+                            <div class="dropdowns-content">
+                                <a _ngcontent-vsd-c48="" class="list_text"
+                                    href="https://www.irctctourism.com/gallery/tajas.html">Group Booking</a>
+                                <a class="list_text"
+                                    href="https://contents.irctc.co.in/en/Travel_Insurance_Claim_Process_for_IRCTC_TejasExp.pdfTravel">
+                                    Insurance Claim Process</a>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-list header-icon-menu dropdowns">
+                            <a class="check" aria-label="Menu Holiday" onclick="return false;">Cancel Ticket</a>
+                            <div class="dropdowns-content">
+                                <a _ngcontent-vsd-c48="" class="list_text"
+                                    href="https://www.irctc.co.in/nget/train-search">E-Tickets</a>
+                                <a class="list_text"
+                                    href="https://www.operations.irctc.co.in/ctcan/SystemTktCanLogin.jsf">Counter
+                                    Tickets</a>
+
+                            </div>
+                        </div>
+                        <div class="menu-list header-icon-menu dropdowns">
+                            <a class="check" aria-label="Menu Holiday" onclick="return false;"
+                                href="https://www.irctc.co.in/nget/enquiry/pnr-enquiry">PNR Enquiry</a>
+
+                        </div>
+                        <div class="menu-list header-icon-menu dropdowns">
+                            <a class="check" aria-label="Menu Holiday" onclick="return false;"
+                                href="https://www.irctc.co.in/nget/booking/check-train-schedule">Train Schedule</a>
+
+                        </div>
+                        <div class="menu-list header-icon-menu dropdowns">
+                            <a class="check" aria-label="Menu Holiday" onclick="return false;"
+                                href="https://enquiry.indianrail.gov.in/">Track your Train</a>
+
+                        </div>
+                        <div class="menu-list header-icon-menu dropdowns">
+                            <a class="check" aria-label="Menu Holiday" onclick="return false;"
+                                href="https://www.ftr.irctc.co.in/ftr/">FTR Coach/Train Booking</a>
+
+                        </div>
+                    </div>
+                    </div>
+                    <li class="menu-list header-icon-menu"><a aria-label="Menu BUSES. Website will be opened in new tab"
+                            rel="noopener noreferrer" tabindex="0" target="_blank" href="https://www.bus.irctc.co.in/"
+                            class="a"> BUSES </a></li>
+                    <li class="menu-list header-icon-menu"><a
+                            aria-label="Menu Flight. Website will be opened in new tab" rel="noopener noreferrer"
+                            tabindex="0" target="_blank" href="https://www.air.irctc.co.in" class="a"> FLIGHTS </a></li>
+                    <li class="menu-list header-icon-menu">
+                        <a _ngcontent-bpw-c48="" aria-label="Menu Hotels. Website will be opened in new tab"
+                            rel="noopener noreferrer" tabindex="0" target="_blank"
+                            href="https://www.hotel.irctctourism.com/" class="a"> HOTELS </a>
+                    </li>
+
+                    <div class="menu-list header-icon-menu dropdown">
+                        <a aria-label="Menu Holiday" onclick="return false;"> HOLIDAYS </a>
+                        <div class="dropdown-content">
+                            <div class="menu-list header-icon-menu dropdowns">
+                                <a class="check" aria-label="Menu Holiday" onclick="return false;"> Tourist Trains </a>
+                                <div class="dropdowns-content">
+                                    <a _ngcontent-vsd-c48="" class="list_text"
+                                        href="https://www.irctctourism.com/bharatgaurav">Bharat Gaurav</a>
+                                    <a class="list_text" href="https://www.the-maharajas.com/">Maharaja Express</a>
+                                    <a class="list_text" href="https://www.goldenchariot.org/">Golden Chariot</a>
+                                </div>
+                            </div>
+                            <div class="menu-list header-icon-menu dropdowns">
+                                <a class="check" aria-label="Menu Holiday" onclick="return false;">Tour Packages</a>
+                                <div class="dropdowns-content">
+                                    <a _ngcontent-vsd-c48="" class="list_text"
+                                        href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=Domestic&sector=All">Domestic
+                                        Packages</a>
+                                    <a class="list_text"
+                                        href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=International&sector=All">International
+                                        Packages</a>
+                                </div>
+                            </div>
+                            <div class="menu-list header-icon-menu dropdowns">
+                                <a class="check" aria-label="Menu Holiday" onclick="return false;">Link 3</a>
+                                <div class="dropdowns-content">
+                                    <a _ngcontent-vsd-c48="" class="list_text"
+                                        href="https://www.rr.irctctourism.com/#/home">Retiring Room</a>
+                                    <a class="list_text" href="https://www.irctctourism.com/accommodation">Lounge</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-list header-icon-menu dropdown">
+                        <a aria-label="Menu Holiday" onclick="return false;"> LOYALTY </a>
+                        <div class="dropdown-content">
+                            <div class="menu-list header-icon-menu dropdowns">
+                                <a aria-label="Menu Holiday" onclick="return false;"> IRCTC SBI Credit Carrd </a>
+                                <div class="dropdowns-content">
+                                    <a _ngcontent-vsd-c48="" class="list_text"
+                                        href="https://contents.irctc.co.in/en/AboutSBICobrandCard.pdf">About SBI Credit
+                                        Card</a>
+                                    <a class="list_text"
+                                        href="https://www.sbicard.com/sprint/c/irctcRuPay?GEMID1=dis_2022_Jun_IRCTC_website&GEMID2=IRCTC&CS=affiliate">IRCTC
+                                        SBI Credit Card Platinum Rupay e-apply</a>
+                                </div>
+                            </div>
+                            <div class="menu-list header-icon-menu dropdowns">
+                                <a class="check" aria-label="Menu Holiday" onclick="return false;">IRCTC BOB Credit
+                                    Carrd</a>
+                                <div class="dropdowns-content">
+                                    <a _ngcontent-vsd-c48="" class="list_text"
+                                        href="https://contents.irctc.co.in/en/AboutBOBCobrandCard.pdf">About BOB Credit
+                                        Card</a>
+                                </div>
+                            </div>
+                            <div class="menu-list header-icon-menu dropdowns">
+                                <a class="check" aria-label="Menu Holiday" onclick="return false;">IRCTC HDFC Credit
+                                    Carrd</a>
+                                <div class="dropdowns-content">
+                                    <a _ngcontent-vsd-c48="" class="list_text"
+                                        href="https://contents.irctc.co.in/en/About_IRCTC_HDFC_CobrandCard.pdf">About
+                                        HDFC Credit Card</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-list header-icon-menu dropdown">
+                        <a aria-label="Menu Holiday" onclick="return false;"> MEALS </a>
+                        <div class="dropdown-content">
+                            <div class="menu-list header-icon-menu dropdowns">
+                                <a aria-label="Menu Holiday" onclick="return false;"> Order Food E-catering </a>
+
+                            </div>
+                            <div class="menu-list header-icon-menu dropdowns">
+                                <a class="check" aria-label="Menu Holiday" onclick="return false;">Cooked Food Menu</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </ul> -->
+                    <li><a class="menu-list header-icon-menu" href="#">PROMOTIONS</a></li>
+                    <div class="menu-list header-icon-menu" style="font-weight:bolder; font-size:75%;">MORE</div>
+                </div>
+            </div>
+            <img src="https://www.irctc.co.in/nget/assets/images/logo.png" alt="irctc logo 2"
+                style="width: 4%; height: 78%; margin-right:2%;">
+    </header>
+    <section class="main-section">
+        <div class="tdetails">
+            <div class="head-tdetails">
+                <div class="pnr">
+                    <img src="https://www.irctc.co.in/nget/assets/images/icons/pnr.png" alt="pnr-logo" height="90%"
+                        style="padding-right:10%;">
+                    <div style="padding-left:15%;">PNR STATUS</div>
+                </div>
+                <div class="charts">
+                    <img src="https://www.irctc.co.in/nget/assets/images/icons/chart.png" alt="chart-logo" height="90%">
+                    <div>CHARTS / VACANCY</div>
+                </div>
+            </div>
+            <div class="travel-details clr-row">
+                <div class="travel-detail clr-row">
+                    <img src="	https://www.irctc.co.in/nget/assets/images/logo_top_eng.jpg"
+                        style="width: 24%; height: 90px; margin-right:2.5rem;">
+                    <div class="tdetail-head">BOOK TICKET</div>
+                    <img src="https://www.irctc.co.in/nget/assets/images/G20_Logo.png" alt="irctc logo 2"
+                        style="width: 24%; height: 70px; margin-left:2.5rem;">
+                </div>
+                <form class="forms">
+                    <div class="src-dest">
+                        <div class="src">
+                            <i _ngcontent-kcc-c68="" class="fa fa-location-arrow"
+                                style="margin: 3px 0px 3px 10px;width:10%;"></i>
+                            <input style="width:90%;" type="text" class="srctext" placeholder="From" />
+                        </div>
+
+                        <a _ngcontent-sqr-c67="" tabindex="0" aria-label="Sweep from and to station."
+                            class="col-xs-push-11 col-sm-push-6 swap">
+                            <i _ngcontent-sqr-c67="" class="fa fa-exchange rotate90"></i></a>
+
+                        <div class="dest">
+                            <i _ngcontent-kcc-c68="" class="fa fa-map-marker"
+                                style="margin: 3px 0px 3px 10px;width:10%;"></i>
+                            <input style="width:90%;" type="text" class="desttext" placeholder="To" />
+                        </div>
+
+                        <div class="qota">
+                            <i _ngcontent-cdb-c68="" class="fa fa-th-large"
+                                style="margin: 3px 0px 3px 10px;width:10%;"></i>
+                            <select class="qotatext" style="width:90%;">
+                                <option value="general">GENERAL</option>
+                                <option value="ladies">LADIES</option>
+                                <option value="general">LOWER BERTH/SR.CITIZEN</option>
+                                <option value="general">DIVYAANG</option>
+                                <option value="general">TATKAL</option>
+                                <option value="general">PREMIUM TATKAL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tdate-class">
+                        <div class="tdate">
+                            <i _ngcontent-prg-c68="" class="fa fa-calendar"
+                                style="margin: 3px 0px 0px 10px;width:15%;"></i>
+                            <input style="width:85%" type="date" placeholder="dd/mm/yyyy" class="datatxt">
+                        </div>
+                        <div class="tclass">
+                            <i _ngcontent-prg-c68="" class="fa fa-briefcase"
+                                style="margin: 3px 0px 0px 10px;width:15%;"></i>
+                            <select class="classtxt" style="width:85%;">
+                                <option value="general">All Classes</option>
+                                <option value="ladies">Anubhuti Class (EA)</option>
+                                <option value="general">AC First Class (1A)</option>
+                                <option value="general">Exec. Chair Car (EC)</option>
+                                <option value="general">AC 2 Tier (2A)</option>
+                                <option value="general">First Class (FC)</option>
+                                <option value="general">AC 3 Tier (3A)</option>
+                                <option value="general">AC 3 Economy (3E)</option>
+                                <option value="general">AC Chair car (CC)</option>
+                                <option value="general">Sleeper (SL)</option>
+                                <option value="general">Second Sitting (2S)</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div class="check-box1">
+                    <div style="width: 40%;">
+                        <input type="checkbox" id="dc" />
+                        <label style="display:block; color:rgb(33,61,119); font-size:90%; font-weight: bolder;"
+                            for="dc">Divyaang Concession</label>
+                    </div>
+                    <div style="width: 40%;">
+                        <input type="checkbox" id="fwd" />
+                        <label style="display:block; color:rgb(33,61,119); font-size:90%; font-weight: bolder;"
+                            for="fwd">Flexible with Date</label>
+                    </div>
+                </div>
+                <div class="check-box2">
+                    <div style="width: 42%;">
+                        <input type="checkbox" id="tab" />
+                        <label style="display:block; color:rgb(33,61,119); font-size:90%; font-weight: bolder;"
+                            for="tab">Train with Available Birth</label>
+                    </div>
+                    <div style="width: 50%;">
+                        <input type="checkbox" id="rpc" />
+                        <label style="display:block; color:rgb(33,61,119); font-size:90%; font-weight: bolder;"
+                            for="rpc">Railway Pass Concession</label>
+                    </div>
+                </div>
+                <div class="travels-detail clr-row">
+                    <button class="search">
+                        Search
+                    </button>
+                    <div _ngcontent-qho-c67="" class="col-md-9 col-sm-12 col-xs-12 remove-pad"
+                        style=" padding-bottom: 15px; text-align: right;"><a _ngcontent-qho-c67=""
+                            class="launchAskDisha"> Try booking in Ask DISHA 2.0 </a></div>
+                </div>
+            </div>
+            <div class="c-services">
+                Customers are requested to contact only on IRCTC's authorised contact no./Email id (Contact No.:14646 OR
+                0755-6610661 / 0755-4090600, Email: care@irctc.co.in), for assistance regarding ticket booking, refund
+                or forgot user-id/password. Beware of fraudulent sites offering assistance.
+                <p class="c-service">
+                    Please check the alert section regarding restoration of AC 3-tier economy fare.
+                </p>
+            </div>
+
+        </div>
+        <div class="ir-title">
+            <div class="title">
+                INDIAN RAILWAYS
+            </div>
+            <div class="sub-title">
+                Safety | Security | Punctuality
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </section>
+</body>
+
+</html>
